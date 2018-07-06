@@ -32,6 +32,6 @@ png("plot6.png")
 ggplot(data=plot6m, aes(x=Year,y=TotalPM, col=City,group=City))+
     geom_line()+
     geom_point(size=3)+
-    labs(title="Total PM2.5 by Motor Vehicles \nin Baltimore City, MD and Los Angeles, CA",y="Total PM25 (tons)")+
+    labs(title="Total PM2.5 Emitted by Motor Vehicles \nin Baltimore City, MD and Los Angeles, CA",y="Total PM25 (tons)")+
     theme(plot.title=element_text(hjust=0.5,size = 20))
 dev.off()
