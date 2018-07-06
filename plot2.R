@@ -15,7 +15,9 @@ SCC <- readRDS("Source_Classification_Code.rds")
 
 
 #Plot 2:
+#Subset only data for Baltimore City
 Balt<-subset(NEI,fips=="24510")
+#Use tapply to sum all PM25 values
 plot2<-with(Balt,tapply(Emissions,list(year), FUN = sum))
 plot(plot2, type="o",pch=19,ylab="Total PM2.5 Emissions (tons)",xlab="Year",main = "Total PM2.5 Emissions by Year for Baltimore City, MD",xaxt="n")
 axis(1,at=c(1,2,3,4),labels = c("1999","2002","2005","2008"))
