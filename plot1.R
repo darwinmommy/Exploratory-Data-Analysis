@@ -10,8 +10,8 @@ if(!file.exists("PM Data")){
 }
 
 #Read the data files
-NEI <- readRDS("summarySCC_PM25.rds")
-SCC <- readRDS("Source_Classification_Code.rds")
+NEI <- readRDS("PM Data/summarySCC_PM25.rds")
+SCC <- readRDS("PM Data/Source_Classification_Code.rds")
 
 #Plot 1:
 #Use tapply to sum the PM2.5 values
